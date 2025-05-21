@@ -1,0 +1,344 @@
+ .glow-wrap {
+    position: relative;
+    padding: 1.5rem;
+    background-color: #333;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(4, 225, 237, 0.945);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .glow-wrap:hover {
+    box-shadow: 0 0 30px rgb(252, 231, 3), 0 0 60px yellow; /* Glow on hover */
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
+  .typing-effect {
+    font-size: 24px;
+    font-feature-settings: "Courier New", Courier, monospace;
+    display: inline-block;
+    border-right: 3px solid #000; 
+    white-space: nowrap; 
+    overflow: hidden;
+    animation: typing 3s steps(30) 1s infinite, blink 0.75s step-end infinite; 
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 1;  
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 4s ease-in-out; 
+  }
+  @keyframes clickEffect {
+    0% {
+      transform: scale(1.45); 
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(2);
+    }
+  }
+  
+  .teks-warna-warni {
+    animation: kedip-warna 3s infinite;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  @keyframes kedip-warna {
+    0%   { color: rgb(247, 122, 220); }
+    25%  { color: rgb(96, 83, 172); }
+    50%  { color: rgb(100, 171, 108); }
+    75%  { color: rgb(98, 174, 175); }
+  }
+    
+  .goyang {
+    width: 200px;
+    animation: zoom 3s infinite ease-in-out;
+    display: block;
+    margin: 50px auto;
+  }
+  
+  @keyframes zoom {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.1); }
+    100%  { transform: scale(1); }
+  }
+
+  @keyframes geserKanan {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  .animasi-teks {
+    animation: geserKanan 6.5s ease-out forwards;
+    display: inline-block;
+    position: relative;
+  }
+
+  @keyframes geserKiri {
+    0% { transform: translateX(100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  .animasi-teks-kiri {
+    animation: geserKiri 7.5s ease-out forwards;
+    display: inline-block;
+    position: relative;
+  }
+
+
+.animasi-total {
+  animation: fadeIn 4s ease-in-out, zoom 3s infinite ease-in-out;
+  display: block;
+  margin: 50px auto;
+}
+
+.icon-hover {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.icon-hover:hover {
+  box-shadow: 0 0 15px 5px rgba(255, 251, 0, 0.963); 
+  transform: scale(1.1); 
+}
+
+.project {
+  opacity: 0;
+  animation: muncul 5s ease-out forwards;
+}
+
+@keyframes muncul {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in, .animasi-teks, .animasi-teks-kiri, .animasi-total {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+  will-change: opacity, transform;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes bar {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+@keyframes circle {
+  0% {
+    background: conic-gradient(#00f3ff 0% 0%, #333 0% 100%);
+  }
+  100% {
+    background: conic-gradient(#00f3ff 0% 70%, #333 70% 100%);
+  }
+}
+
+.bar-progress {
+  animation: bar 15s ease-in-out infinite;
+  box-shadow: 0 0 8px #0ff, 0 0 16px #0ff;
+}
+
+@keyframes circle {
+  0% {
+    background: conic-gradient(#00f3ff 0% 80%, #333 80% 100%);
+    box-shadow: inset 0 0 30px #00f3ff, inset 0 0 60px #00f3ff; 
+
+    background: conic-gradient(#ff00ff 0% 70%, #333 70% 100%);
+    box-shadow: inset 0 0 30px #ff00ff, inset 0 0 60px #ff00ff; 
+  }
+  66% {
+    background: conic-gradient(#00ff00 0% 70%, #333 70% 100%);
+    box-shadow: inset 0 0 30px #00ff00, inset 0 0 60px #00ff00; 
+  }
+  100% {
+    background: conic-gradient(#00f3ff 0% 70%, #333 70% 100%);
+    box-shadow: inset 0 0 30px #00f3ff, inset 0 0 60px #00f3ff; 
+  }
+}
+
+.circle-progress {
+  animation: circle 5s ease-in-out infinite; 
+  border-radius: 50%; 
+  width: 150px; 
+  height: 150px; 
+}
+
+.foto-goyang {
+  animation: goyangAtasBawah 0.6s infinite ease-in-out alternate;
+  filter: drop-shadow(0 0 15px rgba(14, 175, 244, 0.6));
+  border-radius: 50%;
+}
+
+@keyframes goyangAtasBawah {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-12px);
+  }
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  background: transparent;
+}
+
+.foto-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.bg-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  z-index: 0;
+}
+
+.foto-profil {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
+  box-shadow: 0 0 20px #0056b3; 
+}
+
+.foto-profill {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  box-shadow: 0 0 20px #0056b3; /
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 20px;
+}
+
+.skills-container {
+  display: flex;
+  gap: 40px;
+}
+
+.left-skills {
+  width: 320px; /
+}
+
+.bar {
+  width: 200%; 
+  max-width: 450x; 
+  background-color: #12173e;
+  height: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: linear-gradient(to right, #00ffff, #00ccff);
+  width: 0;
+  border-radius: 10px;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 2s;
+   box-shadow: 0 0 10px #19e4ef, 0 0 20px #19e4ef, 0 0 30px #19e4ef;
+}
+
+
+.fill.html {
+  animation-name: fill-html;
+}
+
+.fill.css {
+  animation-name: fill-css;
+}
+
+.fill.js {
+  animation-name: fill-js;
+}
+
+.fill.bootstrap {
+  animation-name: fill-bootstrap;
+}
+
+.fill.tailwind {
+  animation-name: fill-tailwind;
+}
+
+@keyframes fill-html {
+  from { width: 0; }
+  to { width: 80%; }
+}
+
+@keyframes fill-css {
+  from { width: 0; }
+  to { width: 70%; }
+}
+
+@keyframes fill-js {
+  from { width: 0; }
+  to { width: 60%; }
+}
+
+@keyframes fill-bootstrap {
+  from { width: 0; }
+  to { width: 50%; }
+}
+
+.skills-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px; /* atur jarak horizontal antar elemen */
+}
+.soft-skills {
+  margin-left: 300px;
+}

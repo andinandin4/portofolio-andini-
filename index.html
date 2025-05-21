@@ -1,0 +1,328 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andini Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#1a1a1a] text-white font-sans">
+
+    <header class="sticky top-0 z-50 flex justify-between items-center p-6 bg-[#121212]">
+      <h1 class="text-orange-500 font-bold text-2xl teks-warna-warni">Andini</h1>
+      <nav class="space-x-6">
+        <a href="#home" class="hover:text-orange-500">Home</a>
+        <a href="#about" class="hover:text-orange-500">About</a>
+        <a href="#skills" class="hover:text-orange-500">Skills</a>
+        <a href="#project" class="hover:text-orange-500">Portfolio</a>
+        <a href="#contact" class="hover:text-orange-500">Contact</a>
+      </nav>
+      <a href="#contact" class="border px-4 py-2 rounded text-sm hover:bg-orange-500">
+        Let’s Talk
+      </a>
+    </header>
+
+<section id="home" class="fade-in relative min-h-screen flex items-center justify-center bg-slate-900 text-white overflow-hidden">
+  <div class="absolute w-72 h-72 bg-pink-500 rounded-full blur-3xl opacity-50 top-0 left-0 -translate-x-1/2 -translate-y-1/2"></div>
+  <div class="absolute w-72 h-72 bg-yellow-400 rounded-full blur-3xl opacity-50 bottom-0 right-0 translate-x-1/3 translate-y-1/3"></div>
+  <div class="absolute w-72 h-72 bg-purple-500 rounded-full blur-3xl opacity-40 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+
+  <div class="relative z-10 flex flex-col md:flex-row items-center gap-12 px-4">
+    <div class="max-w-xl animasi-home text-center md:text-left">
+      <h2 class="text-orange-500 text-xl mb-2">Hello, I'm</h2>
+      <h1 class="text-5xl font-bold mb-2 typing-effect">Andini Setyawati</h1>
+      <h3 class="text-green-400 text-xl mb-4 teks-warna-warni">
+        A Student <span class="text-yellow-400">of SMKN 01 TENGARAN</span>
+      </h3>
+      <p class="mb-6 text-gray-300 animasi-teks-kiri">
+        I'm a student with a background in Software Engineering, passionate about technology.
+      </p>
+      <a href="#about" class=" bg-teal-700 hover:bg-teal-100 text-gray-900 font-semibold py-2 px-4 rounded hover:shadow-[0_0_12px_#25D366] active:shadow-[0_0_20px_#25D366]">About Me</a>
+
+      <div class="flex gap-4 mt-4 justify-center md:justify-start">
+        <div class="rounded-full transition-all duration-300 ease-in-out hover:shadow-[0_0_12px_#4267B2] active:shadow-[0_0_20px_#4267B2]">
+          <a href="#fb" class="block p-2 rounded-full">
+            <img src="https://img.icons8.com/ios-filled/50/4267B2/facebook-new.png" alt="Facebook" class="w-6 h-6">
+          </a>
+        </div>
+        <div class="rounded-full transition-all duration-300 ease-in-out hover:shadow-[0_0_12px_#C13584] active:shadow-[0_0_20px_#C13584]">
+          <a href="#ig" class="block p-2 rounded-full">
+            <img src="https://img.icons8.com/ios-filled/50/C13584/instagram-new.png" alt="Instagram" class="w-6 h-6">
+          </a>
+        </div>
+        <div class="rounded-full transition-all duration-300 ease-in-out hover:shadow-[0_0_12px_#25D366] active:shadow-[0_0_20px_#25D366]">
+          <a href="#wa" class="block p-2 rounded-full">
+            <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp" class="w-6 h-6">
+          </a>
+        </div>
+        <div class="rounded-full transition-all duration-300 ease-in-out hover:shadow-[0_0_12px_#EA4335] active:shadow-[0_0_20px_#EA4335]">
+          <a href="#email" class="block p-2 rounded-full">
+            <img src="https://img.icons8.com/ios-filled/50/EA4335/new-post.png" alt="Email" class="w-6 h-6">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="foto-container foto-goyang">
+        <svg class="bg-shape" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+              <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+          <path fill="#0b1d3a" filter="url(#glow)" />
+        </svg>
+        <img src="img/foto.png" alt="Foto Dini" class="foto-profil">
+      </div>
+    </div>
+</section>
+
+  <section id="about" class="px-10 py-20 bg-gray-800">
+    <div class="fade-in grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="hero">
+        <div class="foto-container foto-goyang">
+          <svg class="bg-shape" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+                <feMerge>
+                  <feMergeNode in="coloredBlur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+            <path fill="#0b1d3a" filter="url(#glow)" />
+          </svg>
+          <img src="img/foto.png" alt="Foto Dini" class="foto-profill">
+        </div>
+      </div>
+      <div>
+        <h2 class="text-orange-500 text-3xl font-bold mb-10 teks-warna-warni">About Me</h2>
+        <h2 class="text-3xl font-bold mb-4 animasi-teks-kiri">I am a student from the RPL department at SMKN 01 TENGARAN from class X-PPLG 4</h2>
+        <p class="text-gray-300 animasi-teks">Hello! I'm someone who loves learning new things, especially those related to technology and design.
+           It all started from curiosity, and I began exploring how to build websites, tweak the appearance, and manage the logic behind the scenes. 
+          Over time, it became a hobby that keeps me excited to keep growing.</p>
+        <div class="flex items-center space-x-6">
+          <div>
+            <span class="text-2xl font-bold text-green-400 animasi-teks-kiri">3</span>
+            <p class="text-gray-400 animasi-teks">My learning experience</p>
+          </div>
+          <div>
+            <span class="text-2xl font-bold text-yellow-400 animasi-teks-kiri">20+</span>
+            <p class="text-gray-400 animasi-teks">Projects Completed</p>
+          </div>
+        </div>
+        <a href="#skills" class="mt-6 inline-block bg-teal-700 hover:bg-teal-100 text-gray-900 font-semibold py-2 px-4 rounded hover:shadow-[0_0_12px_#25D366] active:shadow-[0_0_20px_#25D366] animasi-teks-kiri">My skills</a>
+        <a href="#contact" class="mt-6 inline-block bg-teal-700 hover:bg-teal-100 text-gray-900 font-semibold py-2 px-4 rounded hover:shadow-[0_0_12px_#25D366] active:shadow-[0_0_20px_#25D366] animasi-teks">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+<section id="skills">
+<div class="skills-container skills-section fade-in animasi-teks-kiri">
+    <div class="left-skills">
+       <h2 class="text-2xl font-semibold mb-4 teks-warna-warni">My Skills</h2>
+
+      <p>HTML 80%</p>
+      <div class="bar"><div class="fill html"></div></div>
+
+      <p>CSS 70%</p>
+      <div class="bar"><div class="fill css"></div></div>
+
+      <p>JavaScript 60%</p>
+      <div class="bar"><div class="fill js"></div></div>
+
+      <p>Bootstrap 50%</p>
+      <div class="bar"><div class="fill bootstrap"></div></div>
+
+      <p>Tailwind CSS 50%</p>
+      <div class="bar"><div class="fill bootstrap"></div></div>
+    </div>
+
+  <div class="w-full md:w-1/2 text-center soft-skills animasi-teks">
+      <h2 class="text-2xl font-semibold mb-4 teks-warna-warni">Soft Skills</h2>
+      <div class="relative inline-block w-40 h-40 rounded-full border-8 border-gray-800 mb-6">
+          <div class="circle-progress absolute inset-0 rounded-full" style="background: conic-gradient(#00f3ff 0% 70%, #333 70% 100%);"></div>
+      </div>
+      <div class="mb-6">
+          <span>Creativity 70%</span>
+      </div>
+      <div class="mb-6">
+          <span>Communication 60%</span>
+      </div>
+      <div class="mb-6">
+          <span>Leadership 50%</span>
+      </div>
+  </div>
+ </div>
+</section>
+
+<section id="project" class="bg-[#1a1a1a] fade-in"> 
+  <div class="max-w-6xl mx-auto px-4 text-center">      
+    <h2 class="text-3xl font-bold mb-8 text-blue-500 teks-warna-warni">Projects</h2>      
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">      
+
+      <a href="https://auliafazha1903.github.io/project-semester-1/" target="_blank" class="project">
+        <div class="bg-gray-700 border-2 border-gray-800 rounded-lg overflow-hidden shadow-[0_0_25px_#3b82f6] hover:shadow-[0_0_35px_#c084fc] active:shadow-[0_0_35px_#facc15] cursor-pointer transform transition duration-300 hover:scale-105 active:scale-95">      
+          <img src="img/project1.png" alt="Project 1" class="w-full h-48 object-cover">      
+          <div class="p-4 text-left">      
+            <h5 class="text-blue-500 font-bold">Project Semester 1</h5>      
+            <p>A simple website built using HTML and CSS as part of a semester project. It focuses on basic layout and styling concepts.</p>      
+          </div>      
+        </div>   
+      </a>   
+
+      <a href="https://andinandin4.github.io/E-commere_Shop/" target="_blank" class="project">
+        <div class="bg-gray-700 border-2 border-gray-800 rounded-lg overflow-hidden shadow-[0_0_25px_#3b82f6] hover:shadow-[0_0_35px_#c084fc] active:shadow-[0_0_35px_#facc15] cursor-pointer transform transition duration-300 hover:scale-105 active:scale-95">      
+          <img src="img/ecomerce.png" alt="Project 2" class="w-full h-48 object-cover">      
+          <div class="p-4 text-left">      
+            <h5 class="text-blue-500 font-bold">Ecommerce Shop</h5>      
+            <p>An e-commerce flower shop website developed with HTML and CSS, showcasing product displays and a clean user interface.</p>      
+          </div>      
+        </div>     
+      </a> 
+
+      <a href="https://andinandin4.github.io/Tugas-Travel/" target="_blank" class="project">
+        <div class="bg-gray-700 border-2 border-gray-800 rounded-lg overflow-hidden shadow-[0_0_25px_#3b82f6] hover:shadow-[0_0_35px_#c084fc] active:shadow-[0_0_35px_#facc15] cursor-pointer transform transition duration-300 hover:scale-105 active:scale-95">      
+          <img src="img/travel.png" alt="Project 3" class="w-full h-48 object-cover">      
+          <div class="p-4 text-left">      
+            <h5 class="text-blue-500 font-bold">Platform Travel</h5>      
+            <p>A responsive travel booking platform created using Bootstrap. It adapts to different screen sizes and includes modern layout.</p>      
+          </div>      
+        </div>    
+      </a>
+
+      <a href="https://kurniarahma14.github.io/shop/" target="_blank" class="project">  
+        <div class="bg-gray-700 border-2 border-gray-800 rounded-lg overflow-hidden shadow-[0_0_25px_#3b82f6] hover:shadow-[0_0_35px_#c084fc] active:shadow-[0_0_35px_#facc15] cursor-pointer transform transition duration-300 hover:scale-105 active:scale-95">      
+          <img src="img/shop.png" alt="Project 4" class="w-full h-48 object-cover">      
+          <div class="p-4 text-left">      
+            <h5 class="text-blue-500 font-bold">Shopping App</h5>      
+            <p>A shopping app prototype built with Bootstrap, featuring a clean layout, product cards, and interactive navigation elements.</p>      
+          </div>      
+        </div>      
+      </a>
+
+      <a href="https://andinandin4.github.io/Website-Hospital/" target="_blank" class="project">
+        <div class="bg-gray-700 border-2 border-gray-800 rounded-lg overflow-hidden shadow-[0_0_25px_#3b82f6] hover:shadow-[0_0_35px_#c084fc] active:shadow-[0_0_35px_#facc15] cursor-pointer transform transition duration-300 hover:scale-105 active:scale-95">      
+          <img src="img/klinik.png" alt="Project 5" class="w-full h-48 object-cover">      
+          <div class="p-4 text-left">      
+            <h5 class="text-blue-500 font-bold">Platform Hospital</h5>      
+            <p>A responsive hospital website built using Bootstrap, highlighting services, doctor profiles, and appointment features.</p>      
+          </div>      
+        </div>      
+      </a>
+
+      <a href="https://andinandin4.github.io/Tailwind-Project/" target="_blank" class="project">
+        <div class="project bg-gray-700 border-2 border-gray-800 rounded-lg overflow-hidden shadow-[0_0_25px_#3b82f6] hover:shadow-[0_0_35px_#c084fc] active:shadow-[0_0_35px_#facc15] cursor-pointer transform transition duration-300 hover:scale-105 active:scale-95">      
+          <img src="img/tailwind.png" alt="Project 6" class="w-full h-48 object-cover">      
+          <div class="p-4 text-left">      
+            <h5 class="text-blue-500 font-bold">Tailwind Project</h5>      
+            <p>A modern website developed with Tailwind CSS, focusing on utility-first design and responsive layout customization.</p>      
+          </div>      
+        </div>      
+      </a>
+    </div>     
+  </div>      
+</section>
+
+<section id="contact" class="py-16 bg-gray-900 text-white fade-in">
+  <div class="max-w-xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold text-orange-500 mb-4 teks-warna-warni">Contact</h2>
+    <p class="text-gray-300 text-lg mb-8">Let’s connect and build something great!</p>
+    <div class="space-y-6 text-left bg-gray-800 p-6 rounded-2xl shadow-lg">
+      <div class="flex items-center gap-3">
+        <div class="bg-gray-700 p-2 rounded-full icon-hover">
+          <img src="https://img.icons8.com/ios-filled/24/EA4335/new-post.png" alt="Email">
+        </div>
+        <span id="email">Email: <a href="mailto:andinisetyawati47@gmail.com" class="text-orange-400 hover:underline">andinisetyawati47@gmail.com</a></span>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="bg-gray-700 p-2 rounded-full icon-hover">
+          <img src="https://img.icons8.com/ios-filled/24/C13584/instagram-new.png" alt="Instagram">
+        </div>
+        <span id="ig">Instagram: <a href="https://instagram.com/an.anddini" target="_blank" class="text-orange-400 hover:underline">@an.anddini</a></span>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="bg-gray-700 p-2 rounded-full icon-hover">
+          <img src="https://img.icons8.com/ios-filled/24/25D366/whatsapp.png" alt="WhatsApp">
+        </div>
+        <span id="wa">WhatsApp: <a href="https://wa.me/6285800662627" target="_blank" class="text-orange-400 hover:underline">‪‪+62 858-0066-2627‬‬</a></span>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="bg-gray-700 p-2 rounded-full icon-hover">
+          <img src="https://img.icons8.com/ios-filled/24/4267B2/facebook-new.png" alt="Facebook">
+        </div>
+        <span id="fb">Facebook: <a href="https://img.icons8.com/ios-filled/24/4267B2/facebook-new.png " class="text-orange-400 hover:underline">Andinii</a></span>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="bg-gray-700 p-2 rounded-full icon-hover">
+          <img src="https://img.icons8.com/ios-filled/24/EA4335/marker.png"  alt="Location">
+        </div>
+        <span>Address: Krajan Kedungringin Suruh Semarang</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg[#121212] text-white py-10 mt-16">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div>
+      <h2 class="text-2xl font-bold mb-4 teks-warna-warni">Andini</h2>
+      <p class="text-sm text-gray-400">
+       Student Of RPL at SMKN 1 TENGARAN
+      </p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-3 teks-warna-warni">Navigation</h3>
+      <ul class="space-y-2 text-sm text-gray-400">
+        <li><a href="#home" class="hover:text-white">Home</a></li>
+        <li><a href="#about" class="hover:text-white">About</a></li>
+        <li><a href="#skills" class="hover:text-white">Skills</a></li>
+        <li><a href="#project" class="hover:text-white">Portfolio</a></li>
+        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-3 teks-warna-warni">Contact</h3>
+      <ul class="text-sm text-gray-400 space-y-2">
+        <li>Email: andinisetyawati47@email.com</li>
+        <li>WA: 0858-0066-2627</li>
+        <li>IG: @an.anddini</li>
+        <li>FB: Andiniii</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-3 teks-warna-warni">Address</h3>
+      <p class="text-sm text-gray-400">
+        Ki Nasoro Joko Boro St.<br>
+        Krajan Kedungringin Suruh Semarang
+      </p>
+    </div>
+  </div>
+  <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500">
+    &copy; Andini Setyawati, May 2025, All rights reserved. 
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.fade-in, .animasi-teks, .animasi-teks-kiri, .animasi-total').forEach(el => {
+    observer.observe(el);
+  });
+
+</script>
+  </body>
+</html>
